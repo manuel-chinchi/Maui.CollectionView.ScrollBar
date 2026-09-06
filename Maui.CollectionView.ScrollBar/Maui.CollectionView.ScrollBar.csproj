@@ -14,7 +14,7 @@
     <Version>1.0.0</Version>
     <Authors>Manuel Chinchi</Authors>
     <Description>Enables a scrollbar for the CollectionView control in MAUI (Android API 29+)</Description>
-		<PackageTags>maui;android;scrollbar;collectionview;scrollview</PackageTags>
+		<PackageTags>maui;android;scrollbar;collectionview</PackageTags>
     <PackageProjectUrl>https://github.com/manuel-chinchi/Maui.CollectionView.ScrollBar</PackageProjectUrl>
     <RepositoryUrl>https://github.com/manuel-chinchi/Maui.CollectionView.ScrollBar</RepositoryUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -26,7 +26,15 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
+		<PackageReadmeFile>Readme.md</PackageReadmeFile>
 	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Include="..\Readme.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />

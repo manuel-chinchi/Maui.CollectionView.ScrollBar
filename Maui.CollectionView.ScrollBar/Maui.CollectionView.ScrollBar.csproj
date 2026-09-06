@@ -10,6 +10,16 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 
+    <PackageId>Maui.CollectionView.ScrollBar</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Manuel Chinchi</Authors>
+    <Description>Enables a scrollbar for the CollectionView control in MAUI (Android API 29+)</Description>
+		<PackageTags>maui;android;scrollbar;collectionview;scrollview</PackageTags>
+    <PackageProjectUrl>https://github.com/manuel-chinchi/Maui.CollectionView.ScrollBar</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/manuel-chinchi/Maui.CollectionView.ScrollBar</RepositoryUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">15.0</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">15.0</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
